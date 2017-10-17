@@ -36,6 +36,6 @@ Kaggle
 Python (Pandas, SKLearn) for algorithm and loading/ manipulating data
 
 # Club Resources needed
-Free Food? :D and maybe more members who want to learn or know machine learning. Totally not a cry for help
+Free Food? :D and maybe more members who want to learn or know machine learning. 
 
 
