@@ -15,6 +15,15 @@ def wlr(year):
     team_mappings = team_mappings['Team_Name']
 
     wins_2015.rename(team_mappings, inplace=True)
+    losses_2015.rename(team_mappings, inplace=True)
+
+    wins_2015.columns = ['Wins']
+    losses_2015.columns = ['Losses']
+
+    #print(wins_2015)
+    #print(losses_2015)
+
+    wins_2015.fillna(value = 0, inplace = True)
     return wins_2015;
 
 
