@@ -5,21 +5,16 @@ from stats import returnYear
 import sklearn
 from sklearn.linear_model import LinearRegression
 
-reg_season = pd.read_csv("./data/RegularSeasonDetailedResults.csv", index_col = 0)
-teams = pd.read_csv("./data/Teams.csv", index_col = 0)
-team_mappings = pd.DataFrame.to_dict(teams)
-team_mappings = team_mappings['Team_Name']
-
 year = 2003
 table = returnYear(year)
 table['Y'] = wlr(year)
+
+'''
 table.fillna(value = -1, inplace = True)
 table = table[table['Y'] != -1]
 
-#Add loss data and
-#Add more years
-
 Y = table.Y
+
 X = table
 X.drop('Y', axis = 1, inplace = True)
 X.drop('Lteam', axis = 1, inplace = True)
@@ -47,6 +42,8 @@ lm.fit(X, Y)
 
 prediction = lm.predict(X)
 
-X['Prediction'] = prediction
-#X['Y'] = Y
-winners = X.sort_values('Prediction', ascending = False)
+Output = Y.to_frame()
+Output['Prediction'] = prediction
+Output['Percent Error'] = (Output['Prediction'] - Output['Y']) * 100/Output['Y']
+Output.sort_values('Prediction', ascending = False, inplace = True)
+'''
