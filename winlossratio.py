@@ -1,5 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 
 def wlr(year):
     tourney = pd.read_csv("./data/TourneyCompactResults.csv", index_col = 0)
@@ -27,16 +26,19 @@ def wlr(year):
     wins_2015.fillna(value = 0, inplace = True)
     losses_2015.fillna(value = 0, inplace = True)
 
+
+    maximum = wins_2015.loc[wins_2015['Wins'].idxmax()]
+    maxy = list(maximum)[0] * 1.0
+    ap = pd.DataFrame({'W' : [maxy]}, index = [maximum.name])
+
     wlr = (wins_2015['Wins']/losses_2015['Losses']).to_frame()
-    wlr.columns = ['W/L']
+    wlr.columns = ['W']
+    
+    #wlr = pd.concat([wlr, ap])
+    wlr.sort_values('W', ascending=False, inplace=True)
 
-    wlr.fillna(value = 0, inplace = True)
-
-    wlr.plot(kind = 'bar')
     #wlr.loc['Duke']['W/L'] = 6
-    return wlr;
-
-
+    return wlr
 
 
 
