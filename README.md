@@ -33,7 +33,7 @@ Hopefully finish. If we finish earlier, we can also pick up another sport relate
 Kaggle
 
 # Technologies
-Python (pandas, ski-kit learn, matplotlib) for algorithm and loading/manipulating data
+Python (pandas, sci-kit learn, matplotlib) for algorithm and loading/manipulating data
 
 # Club Resources needed
 Free Food? :D and maybe more members who want to learn or know machine learning. 
