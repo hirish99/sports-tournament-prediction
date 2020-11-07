@@ -9,10 +9,10 @@ Use a Kaggle dataset containing tournament and regular season data alongside see
 Figure out how to import data via pandas or other related data packages found in python like numpy. Mabye graph our data to see trends and isolate good labels (input) data for our program. Also perhaps try to weed out labels that might be too correlated.
 
 ## Week 4
-Learn how to use skikit-learn for simpler classifiers, also think about its applications in our project
+Learn how to use scikit-learn for simpler classifiers, also think about its applications in our project
 
 ## Week 5
-Continue to get adept with skikit-learn by using more advanced classifiers and start thinking about which one to use.
+Continue to get adept with sci-kit-learn by using more advanced classifiers and start thinking about which one to use.
 
 ## Week 6
 Begin creating a python program using our chosen classifier and input data.
