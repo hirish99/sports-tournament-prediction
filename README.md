@@ -12,7 +12,7 @@ Figure out how to import data via pandas or other related data packages found in
 Learn how to use scikit-learn for simpler classifiers, also think about its applications in our project
 
 ## Week 5
-Continue to get adept with sci-kit-learn by using more advanced classifiers and start thinking about which one to use.
+Continue to get adept with scikit-learn by using more advanced classifiers and start thinking about which one to use.
 
 ## Week 6
 Begin creating a python program using our chosen classifier and input data.
@@ -33,7 +33,7 @@ Hopefully finish. If we finish earlier, we can also pick up another sport relate
 Kaggle
 
 # Technologies
-Python (pandas, sci-kit learn, matplotlib) for algorithm and loading/manipulating data
+Python (pandas, scikit-learn, matplotlib) for algorithm and loading/manipulating data
 
 # Club Resources needed
 Free Food? :D and maybe more members who want to learn or know machine learning. 
